@@ -14,6 +14,11 @@ import pic09 from '../assets/Images/9.png'
 import pic11 from '../assets/Images/11.png'
 import pic12 from '../assets/Images/12.png'
 import pic14 from '../assets/Images/13.png'
+import pic15 from '../assets/Images/14.png'
+import pic16 from '../assets/Images/15.png'
+import pic17 from '../assets/Images/16.png'
+import pic18 from '../assets/Images/18.png'
+import pic19 from '../assets/Images/19.png'
 
 
 
@@ -29,6 +34,16 @@ const IndexPage = () => (
         </div>
         
         </section>
+
+        <div className="n p">
+        <ul>
+        <li className = "o"><img src={pic17}  height="18vw" width="auto"  alt="" /></li>
+        <li className = "o"><img src={pic15}  height="18vw" width="auto"  alt="" /></li>
+        <li className = "o"><img src={pic16}  height="18vw" width="auto"  alt="" /></li>
+        <li className = "o q"><img src={pic19}  height="21vw" width="auto"  alt="" /></li>
+        <li className = "o"><img src={pic18}  height="18vw" width="auto"  alt="" /><p>INFO@NEXUSCORPLTD.AE</p></li>
+        </ul>
+        </div>
        
         <div className= "">
           <div className ="m">
@@ -87,7 +102,7 @@ const IndexPage = () => (
           <h1>Services</h1>
           <h3>We Offer</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipicizing elit, sed do eiusmod tempor incicidunt ut labore et dolore magna allqua.</p>
-          <button>-------</button>
+          <button></button>
         </div>
         <div>
         

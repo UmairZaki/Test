@@ -184,7 +184,7 @@
 .m{
 	margin-bottom: 30vw;
 	float: right;
-	margin-top: -50vw;
+	margin-top: -51.6vw;
 	@include breakpoint('<=small') {
 		
 		margin-top: -54vw;
@@ -193,6 +193,8 @@
 	ul{
 		display: grid;
 		grid-template-columns: auto auto auto auto auto auto auto auto;
+		border-top: solid white 1px;
+		padding: 1.6vw;
 	}
 	li{
 		font-size: 1vw;
@@ -210,13 +212,60 @@
 		margin-top: -2vw;
 		}
 		@include breakpoint('<=small') {
-		
+		    margin-right: 1.7vw;
 			button{
 				padding: 0.5vw 1vw;
 				font-size: 1vw;
 			}
 			
 		}
+	}
+}
+
+.n{
+	float: right;
+	margin-top: -41vw;
+	@include breakpoint('<=small') {
+		
+		margin-top: -46vw;
+		
+	}
+	ul{
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		
+	}
+	li{
+		margin-right: 2vw;
+		list-style-type: none;
+		padding-left: 1vw;
+	}
+	p{
+		font-size: 1vw;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: white;
+		margin-top: -1.6vw;
+		margin-left: 1.8vw;
+		@include breakpoint('<=small') {
+		
+			margin-top: -2.1vw;
+			
+		}
+	}
+}
+.o{
+	border-left: solid 1px white;
+}
+.p{
+	img{
+		height: 1.3vw;
+		width: 1.3vw;
+	}
+}
+.q{
+	img{
+		height: 1.6vw;
+		width: 1.6vw;
 	}
 }
 
