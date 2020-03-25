@@ -2,9 +2,9 @@
 @include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
 		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( null,    480px  ),
+		medium:   ( 601px,   980px  ),
+		small:    ( 301px,   600px  ),
+		xsmall:   ( null,    300px  ),
 	));
 
 .xy{
@@ -44,8 +44,6 @@
 	margin-top: -33vw;
 	margin-left: -40vw;
 	box-sizing: border-box;
-	// height: 30vw;
-	// width: 40vw;
 	display: grid;
 	h4{
 		font-size: 3vw;
@@ -97,37 +95,42 @@
 	width: 60%;
 	display: grid;
 	grid-template-columns: auto auto auto;
+	margin-top: 3vw;
 }
 .f{
 	box-sizing: border-box;
 	display: inline-block;
 	height: 20vw;
-	width: 20vw;
-	padding: 1em;
+	width: 17vw;
+	margin-left: 1.5vw;
     img{
 		height: 4vw;
 		width: auto;
+		padding: 1vw 1vw;
 	}
 	h6{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-weight: 900;
 		font-size: 1vw;
 		line-height: 1.2vw;
+		padding: 0 1vw;
 	}
 	p{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-size: 1vw;
 		line-height: 1.4vw;
 		font-weight: lighter;
+		padding: 0 1vw;
 	}
 }
 .i{
 	
-	margin-left: 5vw;
+	margin-left: 9vw;
 	display: grid;
 	grid-template-columns: auto auto;
 	margin-top: 1vw;
 	padding-top: -40em;
-	margin-right: 1vw;
+	margin-right: 3vw;
 }
 .j{
 	margin-top: 12vw;
@@ -152,8 +155,9 @@
 	}
 	p{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 1vw;
-		line-height: 1.4vw;
+		font-size: 1.2vw;
+		font-weight: 100;
+		line-height: 1.9vw;
 		font-weight: lighter;
 	}
 	button{
@@ -181,9 +185,10 @@
 	float: right;
 	margin-top: -52vw;
 	@include breakpoint('<=small') {
-		
 		margin-top: -55vw;
-		
+	}
+	@include breakpoint('<=xsmall') {
+		margin-top: -58vw;
 	}
 	ul{
 		display: grid;
@@ -198,6 +203,7 @@
 		color: white;
 		list-style-type: none;
 		button{
+		margin-right: -3vw;
 		background-color: rgb(255, 255, 255);
 		padding: 0.5vw 1vw;
 		border-radius: 3vw;
@@ -221,9 +227,10 @@
 	float: right;
 	margin-top: -41vw;
 	@include breakpoint('<=small') {
-		
-		margin-top: -46vw;
-		
+	    margin-top: -46vw;
+	}
+	@include breakpoint('<=xsmall') {
+	    margin-top: -52vw;
 	}
 	ul{
 		display: grid;
@@ -242,9 +249,10 @@
 		margin-top: -1.3vw;
 		margin-left: 1.8vw;
 		@include breakpoint('<=small') {
-		
-			margin-top: -1.9vw;
-			
+		    margin-top: -1.9vw;	
+		}
+		@include breakpoint('<=xsmall') {
+		    margin-top: -2.8vw;	
 		}
 	}
 }
@@ -269,7 +277,30 @@
 		width: 1.5vw;
 	}
 }
-
+.s{
+	border-radius: 0.5vw;
+	box-shadow:0 0.5vw 1vw gray;
+}
+.t{
+	img{
+		height: 5.5vw;
+		width: 17.1vw;
+		padding: 0 !important;
+	}
+	
+}
+.u{
+	width: 10%;
+	height: 0.5vw;
+	background: orange;
+	margin-top: -0.5vw;
+}
+.v{
+	width: 17%;
+	height: 0.3vw;
+	background: orange;
+	margin: 0 1vw;
+}
   
 
   
