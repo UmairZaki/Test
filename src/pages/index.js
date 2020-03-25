@@ -14,6 +14,8 @@ import pic16 from '../assets/Images/15.png'
 import pic17 from '../assets/Images/16.png'
 import pic18 from '../assets/Images/18.png'
 import pic19 from '../assets/Images/19.png'
+import pic20 from '../assets/Images/98.png'
+import pic21 from '../assets/Images/97.png'
 
 
 
@@ -71,7 +73,7 @@ const IndexPage = () => (
         </div>
           
          
-
+        <div className= "x"><img src={pic21} alt="" /></div>
 
 
 
@@ -83,7 +85,7 @@ const IndexPage = () => (
                     <h3>We Offer</h3>
                     <div className = "u"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipicizing elit, sed do eiusmod tempor incicidunt ut labore et dolore magna allqua.</p>
-                    <button></button>
+                    <button className= "w"><img src={pic20} alt="" /></button>
                 </div>
                 
             <div>

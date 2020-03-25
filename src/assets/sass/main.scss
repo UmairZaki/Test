@@ -133,6 +133,7 @@
 	margin-right: 3vw;
 }
 .j{
+	z-index: 1;
 	margin-top: 12vw;
 }
 .k{
@@ -162,7 +163,7 @@
 	}
 	button{
 		background-color: rgb(179, 179, 179);
-		padding: 1.5vw 4.5vw;
+		padding: 0 0.8vw;
 		border-radius: 3vw;
 		background-color: rgb(177, 177, 177);
 		font-weight: 600;
@@ -173,7 +174,7 @@
 	@include breakpoint('<=small') {
 		
 		button{
-			padding: 1vw 4vw;
+			padding: 0vw 0.5vw;
 			font-size: 1vw;
 		}
 		
@@ -300,6 +301,24 @@
 	height: 0.3vw;
 	background: orange;
 	margin: 0 1vw;
+}
+.w{
+	img{
+		height: 3vw;
+		width: auto;
+	}
+}
+.x{
+	float: left;
+	margin-left: -11vw;
+	margin-top: -15vw;
+	img{
+		
+		height: 35vw;
+		width: auto;
+		position: absolute;
+		
+	}
 }
   
 
