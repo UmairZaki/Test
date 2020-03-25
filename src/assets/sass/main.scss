@@ -18,6 +18,9 @@
 	background-size: cover;
 	margin-top: -5vw;
 	margin-right: -0.5vw;
+	@include breakpoint('<=small') {
+		margin-right: -2vw;
+	}
 	@include breakpoint('<=xsmall') {
 		margin-right: -3vw;
 	}
@@ -35,6 +38,9 @@
 	background-size: cover;
 	margin-top: -55vw;
 	margin-left: -21vw;	
+	@include breakpoint('<=small') {
+		margin-left: -23vw;
+	}	
 	@include breakpoint('<=xsmall') {
 		margin-left: -26vw;
 	}	
@@ -148,7 +154,11 @@
 	background: white;
 	display: inline-block;
 	width: 100%;
-	margin-left: -1vw;	
+	margin-left: -1vw;
+	@include breakpoint('<=small') {
+		margin-top: -18vw;
+		margin-left: -3vw;
+	   }	
 	@include breakpoint('<=xsmall') {
 		margin-top: -17vw;
 		margin-left: -3vw;
@@ -197,7 +207,7 @@
 	float: right;
 	margin-top: -52vw;
 	@include breakpoint('<=small') {
-		margin-top: -55vw;
+		margin-top: -57vw;
 	}
 	@include breakpoint('<=xsmall') {
 		margin-top: -60vw;
@@ -239,7 +249,7 @@
 	float: right;
 	margin-top: -41vw;
 	@include breakpoint('<=small') {
-	    margin-top: -46vw;
+	    margin-top: -49vw;
 	}
 	@include breakpoint('<=xsmall') {
 	    margin-top: -55vw;
@@ -261,7 +271,7 @@
 		margin-top: -1.3vw;
 		margin-left: 1.8vw;
 		@include breakpoint('<=small') {
-		    margin-top: -1.9vw;	
+		    margin-top: -2vw;	
 		}
 		@include breakpoint('<=xsmall') {
 		    margin-top: -3vw;	
