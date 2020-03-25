@@ -1,13 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout.js'
 
-
-import pic01 from '../assets/Images/1.png'
-// import pic02 from '../assets/1mages/2.jpeg'
-import pic03 from '../assets/Images/3.png'
 import pic04 from '../assets/Images/4.png'
-import pic05 from '../assets/Images/5.png'
-import pic06 from '../assets/Images/6.png'
 import pic07 from '../assets/Images/7.png'
 import pic08 from '../assets/Images/8.png'
 import pic09 from '../assets/Images/9.png'
@@ -44,7 +38,7 @@ const IndexPage = () => (
         <li className = "o"><img src={pic15}  height="18vw" width="auto"  alt="" /></li>
         <li className = "o"><img src={pic16}  height="18vw" width="auto"  alt="" /></li>
         <li className = "o q"><img src={pic19}  height="21vw" width="auto"  alt="" /></li>
-        <li className = "o"><img src={pic18}  height="18vw" width="auto"  alt="" /><p>INFO@NEXUSCORPLTD.AE</p></li>
+        <li className = "o r"><img src={pic18}  height="18vw" width="auto"  alt="" /><p>INFO@NEXUSCORPLTD.AE</p></li>
         </ul>
         </div>
        
