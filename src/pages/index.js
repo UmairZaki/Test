@@ -25,15 +25,18 @@ import pic19 from '../assets/Images/19.png'
 const IndexPage = () => (
        <Layout>
   
-    
+      
       
         <section>
-        <div className="xy"></div>
-        <div className= "yz">
-
-        </div>
+          <div>
         
+        <div className="xy"></div>
+        
+        <div className= "yz"></div>
+        </div>
         </section>
+
+        
 
         <div className="n p">
         <ul>
@@ -61,7 +64,7 @@ const IndexPage = () => (
           </div>
         
 
-     
+          
       
         
         <div className = 'c'>
@@ -86,6 +89,9 @@ const IndexPage = () => (
           </div>
           
           </div>
+
+
+          <div className="ab"></div>
           <div className = "g"></div>
           </div>
           
