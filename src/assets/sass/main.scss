@@ -3,8 +3,8 @@
 		xlarge:   ( 1281px,  1680px ),
 		large:    ( 960px,   1280px ),
 		medium:   ( 695px,   959px  ),
-		small:    ( 441px,   694px  ),
-		xsmall:   ( null,    440px  ),
+		small:    ( 405px,   694px  ),
+		xsmall:   ( null,    404px  ),
 	));
 // background image
 .xy{
@@ -24,7 +24,7 @@
 		margin-right: -1vw;
 	}
 	@include breakpoint('<=xsmall') {
-		margin-right: -1.5vw;
+		margin-right: -1.7vw;
 	}	
 }
 // yellow box image
@@ -170,7 +170,7 @@
 	@include breakpoint('<=small') {
 		margin: 1rem 1rem 0rem 1.5rem;
 		height: 12rem;
-		width: 10.5rem;
+		width: 10rem;
 		h6{
 			padding: 0 0.5rem;
 		}
@@ -248,7 +248,7 @@
 		margin-top: -43.5vw;
 	}
 	@include breakpoint('<=xsmall') {
-		margin-top: -56vw;
+		margin-top: -54vw;
 	}
 	ul{
 		display: grid;
@@ -354,7 +354,7 @@
 	}	
 	@include breakpoint('<=small') {
 		img{
-			width: 10.5rem;
+			width: 10rem;
 		}	
 	}
 }
