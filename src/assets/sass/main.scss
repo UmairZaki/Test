@@ -1,14 +1,13 @@
 @import 'libs/breakpoints';
 @include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 601px,   980px  ),
-		small:    ( 301px,   600px  ),
-		xsmall:   ( null,    300px  ),
+		large:    ( 971px,   1280px ),
+		medium:   ( 651px,   970px  ),
+		small:    ( 401px,   650px  ),
+		xsmall:   ( null,    400px  ),
 	));
-
+// background image
 .xy{
-	
 	background-image: url('../Images/100.png');
 	height: 45vw;
 	width: 90vw;
@@ -17,27 +16,29 @@
 	background-position: right;
 	background-size: cover;
 	margin-top: -5vw;
-	margin-right: -0.5vw;
+	margin-right: -0.6vw;
+	@include breakpoint('<=medium') {
+		margin-right: -1vw;
+	}
 	@include breakpoint('<=small') {
-		margin-right: -2vw;
-	}
-	@include breakpoint('<=xsmall') {
-		margin-right: -3vw;
-	}
-
-	
+		margin-right: -1.5vw;
+	}	
 }
+// yellow box image
 .yz{
 	background-image: url('../Images/99.png');
-	height: 68vw !important;
-	width: 68vw !important;
+	height: 65vw !important;
+	width: 65vw !important;
 	float: left;
     background-repeat: no-repeat;
 	background-position: right;
 	z-index: 99999 !important;
 	background-size: cover;
 	margin-top: -55vw;
-	margin-left: -21vw;	
+	margin-left: -23vw;	
+	@include breakpoint('<=medium') {
+		margin-left: -26vw;
+	}
 	@include breakpoint('<=small') {
 		margin-left: -23vw;
 	}	
@@ -45,17 +46,21 @@
 		margin-left: -26vw;
 	}	
 }
+// nexus image
 .c{
-	height: 40vw; 
-	width: auto;
-	display: flex;
-	
+	display: inline-block;
+	position: absolute;
+	img{
+		height: 3vw; 
+		width: auto;
+	}
 }
+// intro box
 .d{
-	margin-top: -33vw;
-	margin-left: -40vw;
+	margin-left: 8vw;
+	margin-top: 4vw;
 	box-sizing: border-box;
-	display: grid;
+	position: absolute;
 	h4{
 		font-size: 3vw;
 		font-weight: 200;
@@ -69,7 +74,7 @@
 	}
 
 	p{
-		margin-top: -4vw;
+		margin-top: -3vw;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-size: 1.5vw;
 		line-height: 2.2vw;
@@ -81,142 +86,173 @@
 		background-color: white;
 		font-weight: 900;
 	}
-	@include breakpoint('<=small') {
-		
+	@include breakpoint('<=medium') {
 		button{
-			padding: 1vw 3vw;
-			font-size: 1.5vw;
+			padding: 1.2vw 3vw;
+			font-size: 1.3vw;
 		}
-		
-		
 	}
-
-
+	@include breakpoint('<=small') {
+		button{
+			margin-top: -2vw;
+			padding: 0.8vw 2vw;
+			font-size: 1vw;
+		}
+	}
 }
-.g{
-	width: 10%;
+// intro box hr line
+.vr{
+	width: 5%;
 	height: 0.5vw;
 	background: white;
-	margin-top: -19vw;
-	margin-left: -40vw;
+	position: absolute;
+	margin-top: 18vw;
+	margin-left: 8.2vw;
 }
-.h{
-	display: grid;
-}
-
+// 6 box main div of services
 .e{
 	width: 60%;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	margin-top: 3vw;
+	@include breakpoint('<=medium') {
+		width: 100%;
+	   }
+	@include breakpoint('<=small') {
+		grid-template-columns: auto auto;
+		margin: 0;
+		justify-items: center;
+		width: 100%;
+	   }
+	@include breakpoint('<=xsmall') {
+		grid-template-columns: auto;
+		margin: 0;
+		justify-items: center;
+		width: 100%;
+	   }
 }
+// div of each box 
 .f{
 	box-sizing: border-box;
 	display: inline-block;
-	height: 20vw;
-	width: 17vw;
-	margin-left: 1.5vw;
+	height: 12.5rem;
+	width: 10rem;
+	margin: 1rem 1rem;
+
+
     img{
-		height: 4vw;
+		height: 2.5rem;
 		width: auto;
 		padding: 1vw 1vw;
 	}
+	
 	h6{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-weight: 900;
-		font-size: 1vw;
-		line-height: 1.2vw;
+		font-size: 0.7rem;
+		line-height: 0.9rem;
 		padding: 0 1vw;
+		margin-top: -0.01rem;
 	}
 	p{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 1vw;
-		line-height: 1.4vw;
+		font-size: 0.75rem;
+		line-height: 0.85rem;
 		font-weight: lighter;
 		padding: 0 1vw;
 	}
+	@include breakpoint('<=medium') {
+		margin: 1rem 1rem;
+	   }
+	@include breakpoint('<=small') {
+		margin: 1rem 1rem 0rem 1.5rem;
+		h6{
+			padding: 0 0.5rem;
+		}
+		p{
+			padding: 0 0.5rem;
+		}
+
+	   }
 }
+// Parent div of services heading & 6 box
 .i{
-	
 	margin-left: 9vw;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1.2fr 2fr;
 	margin-top: 1vw;
 	padding-top: -40em;
 	margin-right: 3vw;
+	@include breakpoint('<=medium') {
+		grid-template-columns: auto;
+		margin: 0;
+		justify-items: center;
+		align-items: center;
+	   }
 }
+// div for services heading
 .j{
 	z-index: 1;
 	margin-top: 12vw;
+	@include breakpoint('<=medium') {
+		margin: 5rem 2rem 4rem 4rem;
+	   }
+	@include breakpoint('<=small') {
+		margin: 4rem 2rem 2rem 2rem;
+	   }
 }
+// Parent of services over all section
 .k{
-	margin-top: -13vw;
+	margin-top: -10vw;
 	background: white;
 	display: inline-block;
 	width: 100%;
-	margin-left: -1vw;
+	margin-left: -1.5vw;
 	@include breakpoint('<=small') {
-		margin-top: -18vw;
-		margin-left: -3vw;
+		margin-left: -4vw;
 	   }	
-	@include breakpoint('<=xsmall') {
-		margin-top: -17vw;
-		margin-left: -3vw;
-	   }
 }
+// div for services heading font
 .l{
 	h1{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 3vw;
-		line-height: 1.2vw;
+		font-size: 2.1rem;
+		line-height: 0.8rem;
 	}
 	h3{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 2vw;
-		line-height: 1.2vw;
+		font-size: 1.3rem;
+		line-height: 0.6rem;
 	}
 	p{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 1.2vw;
+		font-size: 0.8rem;
 		font-weight: 100;
-		line-height: 1.9vw;
+		line-height: 1rem;
 		font-weight: lighter;
 	}
-	button{
-		background-color: rgb(179, 179, 179);
-		padding: 0 0.8vw;
-		border-radius: 3vw;
-		background-color: rgb(177, 177, 177);
-		font-weight: 600;
-		margin-left: 18vw;
-		margin-top: 12vw;
-		color: white;
-	}
-	@include breakpoint('<=small') {
-		
-		button{
-			padding: 0vw 0.5vw;
-			font-size: 1vw;
-		}
-		
-	}
 }
-
+// navbar big no 1
 .m{
-	// margin-bottom: 30vw;
 	float: right;
-	margin-top: -52vw;
+	margin-top: -49vw;
+	@include breakpoint('<=medium') {
+		margin-top: -52vw;
+	}
 	@include breakpoint('<=small') {
-		margin-top: -57vw;
+		margin-top: -54vw;
 	}
 	@include breakpoint('<=xsmall') {
-		margin-top: -60vw;
+		margin-top: -56vw;
 	}
 	ul{
 		display: grid;
 		grid-template-columns: auto auto auto auto auto auto auto auto;
 		border-top: solid rgba(255, 255, 255, 0.3) 1px;
 		padding: 1.6vw;
+		@include breakpoint('<=medium') {
+			   border-top: none;
+			}
 	}
 	li{
 		font-size: 1vw;
@@ -229,31 +265,31 @@
 		background-color: rgb(255, 255, 255);
 		padding: 0.5vw 1vw;
 		border-radius: 3vw;
-		background-color: rgb(255, 255, 255);
 		font-weight: 600;
 		color: black;
 		margin-top: -2vw;
 		}
-		@include breakpoint('<=small') {
-		    margin-right: 1.7vw;
+		@include breakpoint('<=medium') {
 			button{
 				padding: 0.5vw 1vw;
 				font-size: 1vw;
 			}
 			
 		}
+		@include breakpoint('<=small') {
+		    margin-right: 1.7vw;
+			button{
+				padding: 0.3vw 1vw;
+				font-size: 1vw;
+			}
+			
+		}
 	}
 }
-
+//navbar 2 small 
 .n{
 	float: right;
 	margin-top: -41vw;
-	@include breakpoint('<=small') {
-	    margin-top: -49vw;
-	}
-	@include breakpoint('<=xsmall') {
-	    margin-top: -55vw;
-	}
 	ul{
 		display: grid;
 		grid-template-columns: auto auto auto auto auto;
@@ -270,78 +306,112 @@
 		color: white;
 		margin-top: -1.3vw;
 		margin-left: 1.8vw;
-		@include breakpoint('<=small') {
-		    margin-top: -2vw;	
-		}
-		@include breakpoint('<=xsmall') {
-		    margin-top: -3vw;	
-		}
 	}
+	@include breakpoint('<=medium') {
+		    display: none;	
+		}
 }
+// navbar 2 left border
 .o{
 	border-left: solid 1px rgba(255, 255, 255, 0.3);
 }
+// navbar 2 social media images
 .p{
 	img{
 		height: 1vw;
 		width: 1vw;
 	}
 }
+// navbar 2 image
 .q{
 	img{
 		height: 1.6vw;
 		width: 2.1vw;
 	}
 }
+// navbar 2 image envelope
 .r{
 	img{
 		height: 1.2vw;
-		width: 1.5vw;
+		width: 1.35vw;
 	}
 }
+// services second box shadow
 .s{
 	border-radius: 0.5vw;
 	box-shadow:0 0.5vw 1vw gray;
 }
+// services second image 
 .t{
 	img{
-		height: 5.5vw;
-		width: 17.1vw;
+		height: auto;
+		width: 10rem;
 		padding: 0 !important;
 	}
-	
 }
+// hr line for services heading
 .u{
 	width: 10%;
 	height: 0.5vw;
 	background: orange;
 	margin-top: -0.5vw;
 }
+// hr line for services each box heading
 .v{
 	width: 17%;
-	height: 0.3vw;
+	height: 0.2rem;
 	background: orange;
-	margin: 0 1vw;
+	margin: 0 0.6rem;
+	@include breakpoint('<=small') {
+	margin: 0 0.5rem;
+	}
 }
+// arrow image for button
 .w{
 	img{
-		height: 3vw;
+		height: 1.5rem;
 		width: auto;
 	}
 }
+// services image position
 .x{
 	float: left;
-	margin-left: -11vw;
-	margin-top: -15vw;
+	margin-left: -17vw;
+	margin-top: -16vw;
 	img{
 		
-		height: 35vw;
+		height: 42vw;
 		width: auto;
 		position: absolute;
 		
 	}
+	@include breakpoint('<=medium') {
+		margin-top: -17vw;
+		margin-left: -11vw;
+		}
+	@include breakpoint('<=small') {
+		margin-top: -15vw;
+		margin-left: -11vw;
+		}
+	@include breakpoint('<=xsmall') {
+		margin-top: -13vw;
+		margin-left: -11vw;
+		}
 }
-  
+// arrow button
+.but{
+	background-color: rgb(179, 179, 179);
+	padding: 0 0.8rem !important;
+	border-radius: 2rem;
+	background-color: rgb(177, 177, 177);
+	margin-left: 29vw;
+	margin-top: -5vw;
+	margin-bottom: 2rem;
+	color: white;
+	@include breakpoint('<=medium') {
+		margin: 2rem 3rem;
+    }
+}
 
   
 

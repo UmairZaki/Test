@@ -21,11 +21,11 @@ import pic21 from '../assets/Images/97.png'
 
 const IndexPage = () => (
        <Layout>
-  
+          {/* backround image */}
         <div className="xy"></div>
-        
+          {/* yellow box image */}
         <div className= "yz"></div>
-        
+          {/* small navbar */}
         <div className="n p">
             <ul>
                   <li className = "o"><img src={pic17}  height="18vw" width="auto"  alt="" /></li>
@@ -36,7 +36,7 @@ const IndexPage = () => (
             </ul>
         </div>
        
-        
+        {/* big navbar */}
         <div className ="m">
             <ul>
                   <li>HOME</li>
@@ -49,47 +49,44 @@ const IndexPage = () => (
                   <li><button>0800 0321770</button></li>
             </ul>
         </div>
-        
+        {/* nexus image */}
         <div className = 'c'>
             <div>
                 <img src={pic04} alt="" />
             </div> 
         </div>
           
-
-          
-        <div className ="h">
-            
+          {/* intro heading */}
             <div className = 'd'>
                 <div>
                     <h4>Lets's Talk</h4>
                     <h1>Ideas</h1>
+                   
                     <p>Dubai's leading <strong>Digital Agency</strong><br />
                     Just got better</p>
                     <button>GET STARTED</button>
                 </div>
             </div>
-            <div className = "g"></div>
-        </div>
+            <div className = "vr"></div>
+        
           
-         
+         {/* services background image */}
         <div className= "x"><img src={pic21} alt="" /></div>
 
 
-
+  {/* services section */}
   <div className="k">
-
+            {/* services heading */}
             <div className= "i">
                 <div className = "j l">
                     <h1>Services</h1>
                     <h3>We Offer</h3>
                     <div className = "u"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipicizing elit, sed do eiusmod tempor incicidunt ut labore et dolore magna allqua.</p>
-                    <button className= "w"><img src={pic20} alt="" /></button>
-                </div>
-                
+                    
+                </div> 
             <div>
-        
+        {/* services box section */}
         <div className ="e">
             
             <div className= "f">
@@ -112,11 +109,6 @@ const IndexPage = () => (
                 <p>Lorem ipsum dolor sit amet, consectetur adipicizing elit, sed do eiusmod tempor. </p>
                 <div className = "v"></div>
             </div>
-        
-        </div>
-        
-
-        <div className ="e">
             
             <div className= "f">
                 <img src={pic11}    alt="" />
@@ -142,10 +134,11 @@ const IndexPage = () => (
         </div>
     
     </div>
-        
+    
         </div>  
         </div>
-
+        {/* arrow button */}
+        <button className= "w but"><img src={pic20} alt="" /></button>
       </Layout>
   
 );
