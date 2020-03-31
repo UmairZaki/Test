@@ -139,7 +139,7 @@
 	box-sizing: border-box;
 	display: inline-block;
 	height: 14rem;
-	width: 12.3rem;
+	width: 12rem;
 	margin: 1rem 1rem;
     img{
 		height: 2.8rem;
@@ -184,7 +184,7 @@
 .i{
 	margin-left: 8vw;
 	display: grid;
-	grid-template-columns: 1.4fr 2fr;
+	grid-template-columns: 1.1fr 2fr;
 	margin-top: 1vw;
 	padding-top: -40em;
 	@include breakpoint('<=medium') {
@@ -350,7 +350,7 @@
 .t{
 	img{
 		height: auto;
-		width: 12.3rem;
+		width: 12rem;
 		padding: 0 !important;
 	}
 	@include breakpoint('<=medium') {
