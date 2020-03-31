@@ -1,10 +1,10 @@
 @import 'libs/breakpoints';
 @include breakpoints((
 		xlarge:   ( 1281px,  1680px ),
-		large:    ( 971px,   1280px ),
-		medium:   ( 651px,   970px  ),
-		small:    ( 401px,   650px  ),
-		xsmall:   ( null,    400px  ),
+		large:    ( 960px,   1280px ),
+		medium:   ( 695px,   959px  ),
+		small:    ( 441px,   694px  ),
+		xsmall:   ( null,    440px  ),
 	));
 // background image
 .xy{
@@ -18,9 +18,12 @@
 	margin-top: -5vw;
 	margin-right: -0.6vw;
 	@include breakpoint('<=medium') {
-		margin-right: -1vw;
+		margin-right: -0.7vw;
 	}
 	@include breakpoint('<=small') {
+		margin-right: -1vw;
+	}
+	@include breakpoint('<=xsmall') {
 		margin-right: -1.5vw;
 	}	
 }
@@ -40,7 +43,7 @@
 		margin-left: -26vw;
 	}
 	@include breakpoint('<=small') {
-		margin-left: -23vw;
+		margin-left: -26vw;
 	}	
 	@include breakpoint('<=xsmall') {
 		margin-left: -26vw;
@@ -135,13 +138,11 @@
 .f{
 	box-sizing: border-box;
 	display: inline-block;
-	height: 12.5rem;
-	width: 10rem;
+	height: 14rem;
+	width: 12.4rem;
 	margin: 1rem 1rem;
-
-
     img{
-		height: 2.5rem;
+		height: 2.8rem;
 		width: auto;
 		padding: 1vw 1vw;
 	}
@@ -163,9 +164,13 @@
 	}
 	@include breakpoint('<=medium') {
 		margin: 1rem 1rem;
+		height: 13rem;
+		width: 12rem;
 	   }
 	@include breakpoint('<=small') {
 		margin: 1rem 1rem 0rem 1.5rem;
+		height: 12rem;
+		width: 10.5rem;
 		h6{
 			padding: 0 0.5rem;
 		}
@@ -177,12 +182,11 @@
 }
 // Parent div of services heading & 6 box
 .i{
-	margin-left: 9vw;
+	margin-left: 8vw;
 	display: grid;
 	grid-template-columns: 1.2fr 2fr;
 	margin-top: 1vw;
 	padding-top: -40em;
-	margin-right: 3vw;
 	@include breakpoint('<=medium') {
 		grid-template-columns: auto;
 		margin: 0;
@@ -194,6 +198,7 @@
 .j{
 	z-index: 1;
 	margin-top: 12vw;
+	margin-right: 3vw;
 	@include breakpoint('<=medium') {
 		margin: 5rem 2rem 4rem 4rem;
 	   }
@@ -216,17 +221,17 @@
 .l{
 	h1{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 2.1rem;
+		font-size: 2.4em;
 		line-height: 0.8rem;
 	}
 	h3{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		line-height: 0.6rem;
 	}
 	p{
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 0.8rem;
+		font-size: 0.85rem;
 		font-weight: 100;
 		line-height: 1rem;
 		font-weight: lighter;
@@ -274,7 +279,6 @@
 				padding: 0.5vw 1vw;
 				font-size: 1vw;
 			}
-			
 		}
 		@include breakpoint('<=small') {
 		    margin-right: 1.7vw;
@@ -282,7 +286,6 @@
 				padding: 0.3vw 1vw;
 				font-size: 1vw;
 			}
-			
 		}
 	}
 }
@@ -345,8 +348,18 @@
 .t{
 	img{
 		height: auto;
-		width: 10rem;
+		width: 12.4rem;
 		padding: 0 !important;
+	}
+	@include breakpoint('<=medium') {
+		img{
+			width: 12rem;
+		}	
+	}
+	@include breakpoint('<=small') {
+		img{
+			width: 10.5rem;
+		}	
 	}
 }
 // hr line for services heading
@@ -386,12 +399,12 @@
 		
 	}
 	@include breakpoint('<=medium') {
-		margin-top: -17vw;
+		margin-top: -18vw;
 		margin-left: -11vw;
 		}
 	@include breakpoint('<=small') {
-		margin-top: -15vw;
-		margin-left: -11vw;
+		margin-top: -6vw;
+		margin-left: -49vw;
 		}
 	@include breakpoint('<=xsmall') {
 		margin-top: -13vw;
